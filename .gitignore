@@ -1,1 +1,4 @@
 __pycache__/secret.cpython-310.pyc
+__pycache__/constructs.cpython-310.pyc
+.gitignore
+__pycache__/read_cache.cpython-310.pyc
