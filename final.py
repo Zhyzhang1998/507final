@@ -313,6 +313,16 @@ def plotbarchart(data, city, keywords):
     plt.show()
 
 def sortbysource(newsdata):
+    """Sort the news data based on source.
+
+    Parameters
+    ----------
+    newsdata: list
+
+    Returns
+    ----------
+    dic: dic
+    """
     dic = {}
     for i in newsdata:
         if i.source not in dic.keys():
@@ -323,6 +333,19 @@ def sortbysource(newsdata):
 
 
 def createdataforpie(dic, totalnum):
+    """Creat a new dictionary for pie chart.
+
+    Parameters
+    ----------
+    dic: dic
+        from funtion sortbysource()
+
+    totalnum: int
+
+    Returns
+    ----------
+    dicwithnum: dic
+    """
     dicwithnum = {}
     for i in dic:
         dicwithnum[i] = len(dic[i])/totalnum*100
